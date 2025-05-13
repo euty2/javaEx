@@ -5,7 +5,7 @@ public class $12 {
         //     짝수 조건 if(num % 2 == 0)
         for(int num = 1;num <= 10;num++){
             if(num % 2 == 0)
-                // System.out.println(num);
+                System.out.println(num);
         }     
     }
 }

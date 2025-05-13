@@ -8,9 +8,8 @@ public class $17 {
         System.out.print("양의 정수를 입력하세요 : ");
         int num = sc.nextInt();
 
-        for(int i = 1;i < num;i++){
-            // if(i % 3 == 0)
-            //     System.out.println(i*3);
-        // }
+        for(int i = 1;i <= num;i++){
+            System.out.println(i*3);
+        }
     }
 }
