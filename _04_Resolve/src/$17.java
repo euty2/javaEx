@@ -11,5 +11,7 @@ public class $17 {
         for(int i = 1;i <= num;i++){
             System.out.println(i*3);
         }
+
+        sc.close();
     }
 }

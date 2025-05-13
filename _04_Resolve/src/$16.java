@@ -10,5 +10,7 @@ public class $16 {
         for(int i = 1;i <= num;i++){
             System.out.println("감사합니다");
         }
+
+        sc.close();
     }
 }

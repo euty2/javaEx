@@ -20,5 +20,7 @@ public class $15 {
             System.out.println("삼각형 입니다.");
         else
             // System.out.println("삼각형이 아닙니다.");
+
+        sc.close();
     }
 }

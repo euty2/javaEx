@@ -10,7 +10,19 @@ public class $13 {
         System.out.print("돈을 입금하세요 : ");
         int money = sc.nextInt();
 
-        if(money % 50000 == 0)
-            // System.out.println("5만원");
+        int[] units = {50000, 10000, 5000, 1000, 500, 100, 50, 10, 1};
+        String[] unitNames = {"오만원", "만원", "오천원", "천원", "500원동전", "100원동전", "50원동전", "10원동전", "1원동전"};
+
+        System.out.println("\n금액" + money + "원의 화폐 단위별 구성");
+
+        for(int i = 0;i < money;i++){
+            int count = money / units[i];
+            if(count > 0){
+                System.out.println(unitNames[i] + " " + count + (units[i] >= 1000 ? "매" : "개"));
+                money %= units[i];
+            }
+        }
+
+        sc.close();
     }
 }

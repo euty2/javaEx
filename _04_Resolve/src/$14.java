@@ -18,5 +18,7 @@ public class $14 {
         else if(num % 3 == 0 && num % 6 == 0){
             System.out.println("박수짝짝")
         }
+
+        sc.close();
     }
 }

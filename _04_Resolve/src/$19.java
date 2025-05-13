@@ -11,6 +11,6 @@ public class $19 {
         System.out.print("정수를 입력해주세요 : ");
         int num = sc.nextInt()
         
-    
+        sc.close();
     }
 }
