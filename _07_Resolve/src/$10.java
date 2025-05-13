@@ -1,3 +1,4 @@
+# FIX
 public class $10 {
     public static void main(String[] args) {
         // 10. 정수 배열 5개를 할당하고

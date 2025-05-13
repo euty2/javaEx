@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+# FIX
 public class $05 {
     public static void main(String[] args) {
         // 5. int배열을 10개 생성하세요.

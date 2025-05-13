@@ -1,3 +1,4 @@
+# FIX
 public class $04 {
     public static void main(String[] args) {
         // 4. int배열을 10개 생성하세요.
