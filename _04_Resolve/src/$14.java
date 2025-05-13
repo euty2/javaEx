@@ -8,17 +8,36 @@ public class $14 {
         //     2개가 있으면 "박수짝짝"을 출력하세요
         //     예를 들어 13은 "박수짝"
         //     36인 경우는 "박수짝짝"을 출력하면 됩니다.
-        Scanner sc = new Scanner(System.in);
-        System.out.print("1~99중 정수 하나를 입력해주세요 : ");
-        int num = sc.nextInt();
 
-        if(num % 3 == 0 || num % 6 == 0 || num % 9 == 0){
-            System.out.println("박수짝");
-        }
-        else if(num % 3 == 0 && num % 6 == 0){
-            System.out.println("박수짝짝")
+        Scanner scanner = new Scanner(System.in);
+
+        // 정수 입력 받기
+        System.out.print("1~99 사이의 정수를 입력하세요: ");
+        int number = scanner.nextInt();
+
+        // 유효성 검사
+        if (number < 1 || number > 99) {
+            System.out.println("입력 값은 1~99 사이여야 합니다.");
+        } else {
+            int clapCount = 0;
+
+            // 1의 자리와 10의 자리를 나눠서 각각 검사
+            int tens = number / 10;
+            int ones = number % 10;
+
+            if (tens == 3 || tens == 6 || tens == 9) clapCount++;
+            if (ones == 3 || ones == 6 || ones == 9) clapCount++;
+
+            // 결과 출력
+            if (clapCount == 1) {
+                System.out.println("박수짝");
+            } else if (clapCount == 2) {
+                System.out.println("박수짝짝");
+            } else {
+                System.out.println("박수 없음");
+            }
         }
 
-        sc.close();
+        scanner.close();
     }
 }
