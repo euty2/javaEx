@@ -10,7 +10,7 @@ public class $07 {
 
         Arrays.sort(num);
         System.out.println(Arrays.toString(num));
-        System.out.println(num[0]);
-        System.out.println(num[4]);
+        System.out.println("최소값 : " + num[0]);
+        System.out.println("최대값 : " + num[4]);
     }
 }

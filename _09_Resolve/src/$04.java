@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class $04Method {
+public class $04 {
     public static void gugudan(int num){
         for(int i=1;i<10;i++){
             System.out.println(num + "*" + i + "=" + num*i);

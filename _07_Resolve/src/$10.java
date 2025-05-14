@@ -18,7 +18,7 @@ public class $10 {
 
         System.out.print("오름 차순 결과 정렬: ");
         for(int num : numbers){
-            System.out.println(num + " ")
+            System.out.println(num + " ");
         }
     }
 }

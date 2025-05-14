@@ -1,4 +1,4 @@
-public class $03Method {
+public class $03 {
     public static int total(int num1, int num2){
         int sum = 0;
         for(int i=num1;i<=num2;i++){

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class $05Method {
+public class $05 {
     public static void star(int num){
         for(int i=1;i<=num;i++){
             for(int j=1;j<=i;j++){
@@ -24,6 +24,7 @@ public class $05Method {
         int num = sc.nextInt();
 
         star(num);
-        
+
+        sc.close();
     }
 }

@@ -1,6 +1,6 @@
 import java.util.Arrays;
 
-public class $9 {
+public class $09 {
     public static void main(String[] args) {
         // 9. 정수 배열 5개를 할당하고
         //     System.out.println(Arrays.toString(numArr));

@@ -10,6 +10,7 @@ public class $19 {
         
         Scanner sc = new Scanner(System.in);
         System.out.print("정수를 입력해주세요 : ");
+        
         int num = sc.nextInt()
         
         sc.close();

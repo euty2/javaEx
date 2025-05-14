@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class $02Method {
+public class $02 {
     public static int abs(int num1, int num2){
         return Math.abs(num1-num2);
     }

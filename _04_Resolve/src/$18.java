@@ -9,7 +9,7 @@ public class $18 {
         //     ...
         //     3 x 9 = 27
         Scanner sc = new Scanner(System.in);
-        System.out.print("구구단 단을 입력해주세요 : ");
+        System.out.print("구구단 출력할 단의 숫자 입력 >> ");
         int num = sc.nextInt();
         for(int i = 1;i < 10;i++){
             System.out.println(num + "*" + i + "=" + num*i);
