@@ -1,10 +1,10 @@
-package com.$03Interface.carmain;
+package com.$04Interface.carmain;
 
-import com.$03Interface.factory.FordCar;
-import com.$03Interface.factory.KiaCar;
-import com.$03Interface.factory.ToyotaCar;
-import com.$03Interface.order.CarTest;
-import com.$03Interface.order.ICar;
+import com.$04Interface.factory.FordCar;
+import com.$04Interface.factory.KiaCar;
+import com.$04Interface.factory.ToyotaCar;
+import com.$04Interface.order.CarTest;
+import com.$04Interface.order.ICar;
 
 /*
  * [시나리오]
@@ -26,16 +26,37 @@ public class CarMain {
     public static void main(String[] args) {
         CarTest carTest = new CarTest();
         ICar[] carArr = {new FordCar(), new KiaCar(), new ToyotaCar()};
+        int[] score = {0, 0, 0};
 
         for(int i=0;i<carArr.length;i++){
             carTest.setTest_num(5);
             carTest.setCar(carArr[i]);      // 의존성 주입(DI)
 
-            carTest.onOffTest();
-            carTest.speedTest();
-            carTest.footBreakTest();
-            carTest.driveTest();
+            score[i] += carTest.onOffTest();
+            score[i] += carTest.speedTest();
+            score[i] += carTest.footBreakTest();
+            score[i] += carTest.driveTest();
             System.out.println("---------------------------------");
         }
+        for(int i=0;i<carArr.length;i++){
+            System.out.println("[ " + carArr[i].getClass().getName() + " ] : " +score[i]);
+        }
+        System.out.println();
+        int idx = getMaxScoreIdx(score);
+        System.out.println("선정된 차는 " + carArr[idx].getClass() + 
+                        "이고, 점수는 " + score[idx] + "입니다.");
+    }
+
+    // 가장 높은 점수의 인덱스 반환하는 메서드 
+    private static int getMaxScoreIdx(int[] score){
+        int idx = 0;
+        int max = score[0];
+        for(int i=0;i<score.length;i++){
+            if(max < score[i]){
+                idx = i;
+                max = score[i];
+            }
+        }
+        return idx;
     }
 }
